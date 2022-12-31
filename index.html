@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body> 
+    <h1> اضافة طلب </h1>
+        <div >
+        <label for="user" class="user-lable"> اسم المستخدم:</label>
+        <input type="text" placeholder="Aziz_21286" class="user-input" id="user"  title="Please enter your username"  required>
+        </div>
+        <div >
+            <label for="studentname" class="student-label"> اسم الطالب:</label>
+            <input type="text" placeholder="مثال: عزيز اليونس " class="student-input" id="studentname"   title="Please enter the student's name" required  >
+            </div>
+            <div >
+            <label for="birsday" class="birsday-lable"> تاريخ الولادة: </label>
+            <input type="date"  class="birsday-input" id="birsday" title="Please date of birth" value="" required >
+            </div>
+            <div >
+                <label for="select-B" class="program-label"> البرنامج:</label>
+                <select name="program" id="program" class="program-select" >
+                    <option value="TIC">TIC</option>
+                    <option value="BACT">BACT</option>
+                    <option value="BIT">BIT</option>
+                    <option value="BAIT">BAIT</option>
+                </select>
+                </div>
+                <div>
+                    <label for="mobail-user" class="mobil-label"> الموبايل:</label>
+                    <input type="text"  placeholder="+963-993058019 " class="mobail-input" id="mobail-user" title="for example +963-993058019 or +xxx-xxxxxxx "  >
+                    </div> 
+                    <div>
+                        <span class="captcha"></span>
+                        </div>
+                        <div > <form action="#" class="input-area">
+                            <label for="capatcha1" class="capatcha-label2"> يرجى إدخال رمز التحقق(كابتشا) :</label>
+                            <input type="text" class="capatcha1" placeholder="Enter captcha" maxlength="6" spellcheck="false"  required>
+                          </form>
+                          <div class="status-text"></div>
+                            <button class="check-btn1" value="" onclick="Addname();">اضافة</button>
+    <hr>
+    <h1>جدول باسماء الطلاب</h1>
+    <form action="">
+        <label for="program2" class="program-label2"> البرنامج:</label>
+        <select name="" id="program2" class="program-select2" onchange="filterTable()">
+            <option value="All">All</option>
+            <option value="TIC">TIC</option>
+            <option value="BACT">BACT</option>
+            <option value="BIT">BIT</option>
+            <option value="BAIT">BAIT</option>
+        </select><br>
+        <label for="edit" class="edit-label"> الفرز حسب:</label>
+        <input type="radio" class="numberuser-input" id="numberuser" value="number" name="radio" onclick="sortTable1()" checked >
+        <label for="numberuser" class="numberuser-label"> رقم المستخدم</label>
+        <input type="radio" class="nameuser-input" id="nameuser" value="nameuser" name="radio" onclick="sortTable()"  >
+        <label for="nameuser" class="nameuser-label"> اسم الطالب</label>
+        <input type="radio" class="program-input11" id="program4" value="program-input11" name="radio"  onclick="sortTable2()">
+        <label for="program4" class="program-label11"> البرنامج</label>
+        <table class="table-table" id="show" border="1">
+            <thead>
+                <tr>
+                    <th> متسلسل </th>
+                    <th> اسم المستخدم </th>
+                    <th> اسم الطالب </th>
+                    <th> البرنامج </th>
+                </tr>
+            </thead>
+
+            <tbody id="show1" >
+                <tr>
+                    <td> 1 </td>
+                    <td class="td-color"> aziz_21286 </td>
+                    <td> عزيز اليونس </td>
+                    <td> BIT </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="td-color"> wesam_57527 </td>
+                    <td> وسيم البرادي </td>
+                    <td> BIT </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="td-color"> Mahmoud_193997 </td>
+                    <td> محمود فياض </td>
+                    <td> TIC </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div>
+    <button class="button-convert" onclick="Convert()">Convert to json</button>
+    <div id="textarea">
+        <textarea name="" id="tojson" cols="50"  rows="20" class="text area"  value=""></textarea>
+    </div>
+</div>
+    <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+   display: inline-block;
+}
+body{
+    font-family: sans-serif;
+    font-style:normal;
+    font-size: 18px;
+}
+h1{
+    margin-right: 550px;
+}
+.user-lable{
+    margin-right: 240px;
+   margin-left: 10px;
+}
+.user-input{
+    margin-right: 188px; 
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+.student-label{
+    margin-right: 240px;
+    margin-left: 10px;
+}
+.student-input{
+    margin-right: 200px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+.birsday-lable{
+    margin-right: 240px; 
+    margin-left: 10px;
+}
+.birsday-input{
+    margin-right: 190px;
+    margin-bottom: 8px;
+    padding-left: 50px;
+}
+.program-label{
+    margin-right: 240px;
+    margin-left: 10px;
+}
+.program-select{
+    margin-right: 215px;
+    margin-bottom: 8px;
+    padding: 3px;
+}
+.mobil-label{
+    margin-right: 240px;
+    margin-left: 10px;
+}
+.mobail-input{
+    margin-right: 218px;
+    margin-bottom: 8px;
+    padding-right: 20px;
+    direction: ltr;
+}
+.captcha{
+    margin-right: 540px;
+    text-decoration: line-through;
+}
+.capatcha-label2{
+    margin-right: 170px;
+    margin-left: 80px;
+}
+.input-area{
+    margin-right: 70px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+.check-btn1{
+    margin-right: 520px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+hr{
+    width: 60%;
+    height: 15px;
+    background-color: black;
+    margin-right: 250px;
+}
+.program-label2{
+    margin-right: 240px;
+    margin-left: 10px;
+}
+.program-select2{
+    margin-right: 200px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+.edit-label{
+    margin-right: 240px;
+    margin-left: 10px;
+}
+.numberuser-input{
+    margin-right: 175px;
+    margin-bottom: 8px;
+}
+
+.nameuser-input{
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.program-input11{
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.table-table {
+    margin-right: 500px;
+    margin-top: 10px;
+    text-align: right;
+    height: 150px;
+    width: 450px;
+}
+.td-color{
+    color: blue;
+}
+.button-convert{
+    margin-right: 820px;
+    margin-top: 30px;
+}
+.status-text{
+   text-align: center;
+}
+#textarea{
+    margin-right: 550px;
+    margin-top: 30px;
+    display: inline-block;
+    direction: ltr;
+}
