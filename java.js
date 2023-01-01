@@ -4,7 +4,7 @@ function Addname(){
   if(name_id != 0){alert("Please enter your username ");nameid.value="";
   return false;}
   var student=document.getElementById("studentname");
-  var studentnme=student.value.search(/^\W/);
+  var studentnme=student.value.search(/^[أ-ي]/);
   if(studentnme != 0){alert("Please enter the student's name");student.value=""; return false; }
   var phone=document.getElementById("mobail-user")
   var mobail_user=phone.value.search(/^[\+][(]?([9][6][3])[)]?[-\s\.]+([9])[0-9]{8}$/)
